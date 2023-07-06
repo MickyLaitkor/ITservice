@@ -33,7 +33,7 @@ export const Pricing: FC = () => {
                   </span>
                 </div>
                 <div>
-                  <ul role="list" className="mb-8 space-y-4 text-left">
+                  <ul className="mb-8 space-y-4 text-left">
                     <li className="flex items-center space-x-3">
                       <svg
                         className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
