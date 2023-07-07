@@ -21,24 +21,16 @@ const AboutUs: NextPage = () => {
         <div className="bg-white dark:bg-gray-800 font-[inter]">
           <div className="w-[90%] md:w-full  mx-auto">
             <div className="aboutUsBack pt-16 flex justify-center items-center h-[100vh]">
-              <div className="w-[60%] text-black card">
+              <div className="w-[60%] text-black intro px-10  py-20">
                 <div className="w-fit mx-auto mb-8  text-orange-500">
-                  <h1 className="text-4xl font-bold mb-0 mx-2 text-center">
-                    Welcome to getAmind Private Limited
+                  <h1 className="text-5xl font-bold mb-0 mx-2 text-center">
+                    Welcome to getAmind
                   </h1>
                   <div className="bg-blue-500 h-1"></div>
                 </div>
-                <div className="text-2xl">
+                <div className="text-2xl text-white">
                   {/* <div className="text-2xl "> */}
-                  <p>
-                    At getAmind, we are dedicated to revolutionizing the way
-                    businesses manage their customer relationships. We
-                    understand that customer satisfaction and loyalty are
-                    crucial factors in the success of any organization.
-                    That&apos;s why we provide cutting-edge CRM solutions
-                    tailored to meet the unique needs of our clients.
-                    <br />
-                    <br />
+                  <p className="indent-5">
                     With years of experience in the industry, we have developed
                     a deep understanding of the challenges businesses face when
                     it comes to effectively managing customer interactions,
