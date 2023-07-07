@@ -1,10 +1,10 @@
 import React from 'react';
 import Head from 'next/head';
-import FeatureCard from '../components/FeatureCard';
+import FeatureCard from '../../components/FeatureCard';
 import type { NextPage } from 'next';
-import { Features } from '../data';
-import { Footer } from '../components/Footer';
-import { Header } from '../components/Header';
+import { Features } from '../../data';
+import { Footer } from '../../components/Footer';
+import { Header } from '../../components/Header';
 
 const FeaturePage: NextPage = () => {
   return (
@@ -23,7 +23,7 @@ const FeaturePage: NextPage = () => {
             <div className="w-[60%]">
               <div>
                 <h1 className="text-3xl font-bold text-center mb-8">
-                  CRM Features
+                  Features
                 </h1>
               </div>
               <div className="text-xl">
