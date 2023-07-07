@@ -18,43 +18,45 @@ const FeaturePage: NextPage = () => {
       </Head>
       <div>
         <Header />
-        <div className="w-[90%] mx-auto">
-          <div className="featureback flex justify-center md:pt-28  3xl:pt-56  h-[85vh]">
-            <div className="w-[60%]">
-              <div>
-                <h1 className="text-3xl font-bold text-center mb-8">
-                  Features
-                </h1>
+        <div className="bg-white dark:bg-gray-800">
+          <div className="w-[90%] md:w-full  mx-auto">
+            <div className="featureback flex justify-center md:pt-44  3xl:pt-56  h-[85vh]">
+              <div className="w-[60%]">
+                <div>
+                  <h1 className="text-3xl font-bold text-center mb-8">
+                    Features
+                  </h1>
+                </div>
+                <div className="text-xl">
+                  <p>
+                    Exceptional customer service is at the heart of every
+                    successful business. Our CRM solution is equipped with
+                    features that enhance your customer support, enabling you to
+                    manage tickets, track customer issues, and provide timely
+                    resolutions. By centralizing customer interactions, our CRM
+                    ensures that no customer is overlooked, fostering loyalty
+                    and satisfaction. Deliver exceptional support experiences
+                    that set your business apart with our CRM solution.
+                  </p>
+                </div>
               </div>
-              <div className="text-xl">
-                <p>
-                  Exceptional customer service is at the heart of every
-                  successful business. Our CRM solution is equipped with
-                  features that enhance your customer support, enabling you to
-                  manage tickets, track customer issues, and provide timely
-                  resolutions. By centralizing customer interactions, our CRM
-                  ensures that no customer is overlooked, fostering loyalty and
-                  satisfaction. Deliver exceptional support experiences that set
-                  your business apart with our CRM solution.
-                </p>
+            </div>
+            <div className="relative w-[80%] mx-auto">
+              <div className="grid translate-y-[-120px] grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                {Features.map(item => {
+                  return (
+                    <FeatureCard
+                      key={item.id}
+                      title={item.title}
+                      description={item.description}
+                    />
+                  );
+                })}
               </div>
             </div>
           </div>
-          <div className="relative w-[80%] mb-10 min-h-[50vh] mx-auto">
-            <div className="grid absolute top-[-200px] grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-              {Features.map(item => {
-                return (
-                  <FeatureCard
-                    key={item.id}
-                    title={item.title}
-                    description={item.description}
-                  />
-                );
-              })}
-            </div>
-          </div>
+          <Footer />
         </div>
-        <Footer />
       </div>
     </>
   );
